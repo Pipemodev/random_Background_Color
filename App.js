@@ -12,3 +12,10 @@ function generarColorHexAleatorio(){
     }
     return colorHex;
 }
+function aplicarcolor(){
+    let colorAleatorio = generarColorHexAleatorio();
+    color.textContent = colorAleatorio;
+    document.body.style.backgroundColor = colorAleatorio;
+}
+
+boton.addEventListener('click', aplicarcolor )
